@@ -117,13 +117,27 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
+@media screen and (max-width: 600px) {
+  .jjapheader {
+    width: 100%; /* 화면 너비에 따라 가로 폭 조정 */
+    height: auto; /* 높이 자동 조정 */
+    padding: 20px; /* 패딩 조정 */
   }
 
+  .header {
+    width: 100%; /* 화면 너비에 따라 가로 폭 조정 */
+    border-radius: 0; /* 모서리 둥글기 제거 */
+    position: static; /* 헤더 위치 고정 해제 */
+  }
+
+  .header h1 {
+    font-size: 30px; /* 제목 폰트 크기 조정 */
+  }
+
+  .header2 {
+    padding: 40px; /* 패딩 조정 */
+  }
+}
 
 </style>
 </html>
